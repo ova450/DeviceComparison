@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="DCMB.Domain.Model.Core/DCMB.Domain.Model.Core.csproj" />
+  <Project Path="DCMB.Domain.Model/DCMB.Domain.Model.csproj" />
+  <Project Path="DCMB/DCMB.Shared/DCMB.Shared.csproj" />
+  <Project Path="DCMB/DCMB.Web/DCMB.Web.csproj" />
+  <Project Path="DCMB/DCMB/DCMB.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

@@ -30,7 +30,7 @@ public class Batch(string name, string? description = null, string? logoUrl = nu
     public IDoneTiming Created { get; init; }
     public HashSet<IDoneTiming> Modified { get; init; }
 
-    [ForeignKey("Id")]
+    [ForeignKey("Band")]
     public int BandId { get; init; }
     public Band Band { get; init; }
 }
@@ -47,7 +47,7 @@ public class Model (string name, string? description = null, string? logoUrl = n
     public IDoneTiming Created { get; init; }
     public HashSet<IDoneTiming> Modified { get; init; }
 
-    [ForeignKey("Id")]
+    [ForeignKey("Batch")]
     public int BatchId { get; init; }
     public Batch Batch { get; init; }
 }

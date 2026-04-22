@@ -16,11 +16,11 @@ public class Device(string name, string? description = null, string? logoUrl = n
     public required IDoneTiming Created { get; init; }
     public required HashSet<IDoneTiming> Modified { get; init; }
 
-    [ForeignKey("Id")]
+    [ForeignKey("DeviceType")]
     public int DeviceTypeId { get; init; }
     public required DeviceType DeviceType { get; init; }
 
-    [ForeignKey("Id")]
+    [ForeignKey("Model")]
     public int ModelId { get; init; }
     public required Model Model { get; init; }
 }
